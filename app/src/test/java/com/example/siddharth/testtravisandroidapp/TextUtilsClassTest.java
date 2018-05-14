@@ -1,9 +1,10 @@
 package com.example.siddharth.testtravisandroidapp;
 
+import com.example.siddharth.testtravisandroidapp.Utils.TextUtils.TextUtilsClass;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+import com.example.siddharth.testtravisandroidapp.Utils.*;
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -12,6 +13,7 @@ import static org.junit.Assert.*;
 public class TextUtilsClassTest {
   @Test
   public void justARandomUnitTest() throws Exception {
-    assertEquals(4, 2 + 1);
+    String a = TextUtilsClass.gettingText();
+    assertEquals(a, "This is some random text!");
   }
 }
